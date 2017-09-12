@@ -40,6 +40,11 @@
             android:fragment="com.nitrogen.settings.fragments.CarrierLabel"
             android:title="@string/carrierlabel_title" />
 
+    <Preference
+            android:key="traffic"
+            android:fragment="com.nitrogen.settings.fragments.Traffic"
+            android:title="@string/traffic_title" />
+
     <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
             android:key="show_fourg_icon"
             android:title="@string/show_fourg_icon_title"
