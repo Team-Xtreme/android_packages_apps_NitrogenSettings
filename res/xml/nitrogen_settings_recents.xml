@@ -51,4 +51,9 @@
                  android:targetClass="com.nitrogen.settings.fragments.HAFRAppListActivity" />
      </Preference>
 
+     <Preference
+         android:key="recents_icon_pack"
+         android:title="@string/recents_icon_pack_title"
+         android:summary="@string/recents_icon_pack_summary" />
+
 </PreferenceScreen>
