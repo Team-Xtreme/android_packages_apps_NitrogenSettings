@@ -73,6 +73,13 @@
             android:fragment="com.nitrogen.settings.fragments.RecentsSettings"
             android:icon="@drawable/ic_settings_recents"/>
 
+        <!-- Recents -->
+        <Preference
+            android:key="animation_category"
+            android:title="@string/animation_title"
+            android:fragment="com.nitrogen.settings.fragments.Animations"
+            android:icon="@drawable/ic_settings_recents"/>
+
         <!-- Notifications -->
         <Preference
             android:key="notifications_category"
