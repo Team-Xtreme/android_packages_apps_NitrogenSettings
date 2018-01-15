@@ -658,4 +658,17 @@
     <string name="global_actions_title">Power menu</string>
     <string name="global_actions_summary">Select what to show when you press the power button</string>
 
+    <!-- Launch music player when headset is connected -->
+    <string name="music_title">Music Settings</string>
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_disabled">Disabled</string>
+    <string name="headset_connect_player_wired">Wired headset plugged in</string>
+    <string name="headset_connect_player_bt_no_carkit">BT headset (no carkit) plugged in</string>
+    <string name="headset_connect_player_bt">BT headset plugged in</string>
+    <string name="headset_connect_player_both_no_carkit">Any headset (no carkit) plugged in</string>
+    <string name="headset_connect_player_both">Any headset plugged in</string>
+    <!-- Headset ringtone audio focus -->
+    <string name="ringtone_focus_mode_title">Where to play ringtones from</string>
+    <string name="ringtone_focus_mode_dynamic">From headset if connected and playing music</string>
+    <string name="ringtone_focus_mode_stock">"From speakerphone (aosp default)"</string>
 </resources>

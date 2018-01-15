@@ -66,6 +66,13 @@
             android:fragment="com.nitrogen.settings.fragments.LockScreenSettings"
             android:icon="@drawable/ic_settings_lockscreens"/>
 
+        <!-- Music -->
+        <Preference
+            android:key="music_category"
+            android:title="@string/music_title"
+            android:fragment="com.nitrogen.settings.fragments.MusicSettings"
+            android:icon="@drawable/ic_settings_music" />
+
         <!-- Power Menu -->
         <Preference
             android:key="powermenu__category"
