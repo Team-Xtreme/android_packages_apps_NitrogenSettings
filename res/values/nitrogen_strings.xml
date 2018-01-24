@@ -443,6 +443,7 @@
     <string name="pulse_render_mode_fading_bars">Fading blocks</string>
     <string name="pulse_render_mode_solid_lines">Solid lines</string>
     <string name="fling_pulse_color">Pulse color</string>
+    <string name="fling_pulse_color_summary">Used also as fallback for automatic color</string>
     <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
     <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
     <string name="pulse_advanced_category">Advanced</string>
@@ -454,7 +455,9 @@
     <string name="pulse_solid_units_opacity">Solid lines opacity</string>
     <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
     <string name="pulse_custom_buttons_opacity_title">Smartbar buttons opacity on Pulse</string>
-
+    <string name="pulse_auto_color_title">Automatic Pulse color</string>
+    <string name="pulse_auto_color_summary">Sync color with album arts. Overrides Lava Lamp and lines opacity.</string>
+ 
     <!-- Pulse config -->
     <string name="pulse_custom_dimen">Bar width</string>
     <string name="pulse_custom_div">Bar spacing</string>
@@ -679,7 +682,7 @@
     <string name="recents_show_membar_title">Memory bar</string>
     <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
 
-    <!-- Hide Lockscreen clock, date, & alarm -->
+    <!-- Hide Lockscreen clock, date, & alarm --> 
     <string name="hide_lockscreen_clock_title">Clock widget</string>
     <string name="hide_lockscreen_clock_summary">Change the clock widget\'s visibility</string>
     <string name="hide_lockscreen_date_title">Date widget</string>
