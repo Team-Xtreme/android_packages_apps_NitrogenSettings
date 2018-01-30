@@ -6,14 +6,12 @@
 
     <PreferenceScreen
         android:key="system_animation"
-        android:icon="@drawable/ic_system_animation"
         android:title="@string/system_animation_title"
         android:summary="@string/system_animation_summary"
         android:fragment="com.nitrogen.settings.fragments.animations.AnimationControls" />
 
     <ListPreference
         android:key="listview_animation"
-        android:icon="@drawable/ic_listview"
         android:dialogTitle="@string/listview_animation_title"
         android:title="@string/listview_animation_title"
         android:entries="@array/listview_animation_entries"
@@ -22,7 +20,6 @@
 
     <ListPreference
         android:key="listview_interpolator"
-        android:icon="@drawable/ic_listview"
         android:dialogTitle="@string/listview_interpolator_title"
         android:title="@string/listview_interpolator_title"
         android:entries="@array/listview_interpolator_entries"
@@ -31,7 +28,6 @@
 
     <ListPreference
         android:key="toast_animation"
-        android:icon="@drawable/ic_toast"
         android:title="@string/toast_animation_title"
         android:entries="@array/toast_animation_entries"
         android:entryValues="@array/toast_animation_values"
@@ -39,7 +35,6 @@
 
     <ListPreference
         android:key="pref_scrollingcache"
-        android:icon="@drawable/ic_scroll"
         android:dialogTitle="@string/pref_scrollingcache_title"
         android:title="@string/pref_scrollingcache_title"
         android:entries="@array/entries_scrollingcache"
