@@ -29,6 +29,8 @@
     <string name="device_part_title">Device features</string>
     <string name="rr_power_panel_title">Power menu</string>
     <string name="rr_power_summary">Customize the dim and transparency of the power menu interface</string>
+    <string name="rr_notif_settings_title">Notifications</string>
+    <string name="rr_notif_settings_summary">Force expanded Notifications and Immersive messages</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -1154,5 +1156,13 @@
     <string name="status_bar_weather_font_notoserif_italic">NotoSerif Italic</string>
     <string name="status_bar_weather_font_notoserif_bold">NotoSerif Bold</string>
     <string name="status_bar_weather_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Force expanded notifications</string>
+    <string name="force_expanded_notifications_summary">Force apps that support expanded notifications</string>
+
+    <!-- Disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">Disable immersive mode messages</string>
+    <string name="disable_immersive_message_summary">Hide all messages shown in immersive mode</string>
 
 </resources>
