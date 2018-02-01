@@ -18,12 +18,14 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.nitrogen.AwesomeAnimationHelper;
 
+import com.nitrogen.settings.preferences.CustomSeekBarPreference;
 import com.nitrogen.settings.R;
 
 import java.util.Arrays;
 
 public class AnimationControls extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String ANIMATION_DURATION = "animation_controls_duration";
     private static final String ACTIVITY_OPEN = "activity_open";
     private static final String ACTIVITY_CLOSE = "activity_close";
     private static final String TASK_OPEN = "task_open";
@@ -36,6 +38,7 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
     private static final String WALLPAPER_INTRA_CLOSE = "wallpaper_intra_close";
     private static final String TASK_OPEN_BEHIND = "task_open_behind";
 
+    private CustomSeekBarPreference mAnimDuration;
     ListPreference mActivityOpenPref;
     ListPreference mActivityClosePref;
     ListPreference mTaskOpenPref;
@@ -58,6 +61,17 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.system_animation_controls);
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        mAnimDuration = (CustomSeekBarPreference) findPreference(ANIMATION_DURATION);
+        int animdef = Settings.System.getIntForUser(resolver,
+                Settings.System.ANIMATION_CONTROLS_DURATION, 0, UserHandle.USER_CURRENT);
+        mAnimDuration.setValue(animdef);
+        if (animdef == 0) {
+            mAnimDuration.setSummary(getResources().getString(R.string.animation_duration_default));
+        } else {
+            mAnimDuration.setSummary(getResources().getString(R.string.animation_duration_custom));
+        }
+        mAnimDuration.setOnPreferenceChangeListener(this);
 
         mAnimations = AwesomeAnimationHelper.getAnimationsList();
         int animqty = mAnimations.length;
@@ -138,7 +152,17 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mActivityOpenPref) {
+        if (preference == mAnimDuration) {
+            int value = (Integer) newValue;
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.ANIMATION_CONTROLS_DURATION, value, UserHandle.USER_CURRENT);
+            if (value == 0) {
+                preference.setSummary(getResources().getString(R.string.animation_duration_default));
+            } else {
+                preference.setSummary(getResources().getString(R.string.animation_duration_custom));
+            }
+            return true;
+        } else if (preference == mActivityOpenPref) {
             int val = Integer.parseInt((String) newValue);
             Settings.System.putIntForUser(resolver,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[0], val, UserHandle.USER_CURRENT);
@@ -241,6 +265,8 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
 
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                Settings.System.ANIMATION_CONTROLS_DURATION, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.ACTIVITY_ANIMATION_CONTROLS[0], 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
