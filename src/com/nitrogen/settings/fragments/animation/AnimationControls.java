@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.benzo.settings.animation;
+package com.nitrogen.settings.fragments.animation;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -70,7 +70,7 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.BENZO;
+        return MetricsEvent.NITROGEN_SETTINGS;
     }
 
     @Override

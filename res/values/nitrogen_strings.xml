@@ -648,4 +648,14 @@
     <string name="pref_scrollingcache_default_disable">Default disable</string>
     <string name="pref_scrollingcache_force_disable">Force disable</string>
 
+    <!-- On-The-Go -->
+    <string name="onthego_title">On-The-Go Mode</string>
+    <string name="global_actions_onthego_title">On-The-Go</string>
+    <string name="onthego_alpha_title">On-The-Go Alpha</string>
+    <string name="onthego_alpha_summary">Alpha value of the On-The-Go overlay.</string>
+
+    <!-- Global Actions -->
+    <string name="global_actions_title">Power menu</string>
+    <string name="global_actions_summary">Select what to show when you press the power button</string>
+
 </resources>

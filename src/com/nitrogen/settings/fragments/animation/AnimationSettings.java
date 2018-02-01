@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.benzo.settings.animation;
+package com.nitrogen.settings.fragments.animation;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -60,7 +60,7 @@ public class AnimationSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.BENZO;
+        return MetricsEvent.NITROGEN_SETTINGS;
     }
 
     @Override

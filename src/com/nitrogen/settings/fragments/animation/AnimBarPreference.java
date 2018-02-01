@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.benzo.settings.animation;
+package com.nitrogen.settings.fragments.animation;
 
 import android.content.Context;
 import android.content.res.TypedArray;
