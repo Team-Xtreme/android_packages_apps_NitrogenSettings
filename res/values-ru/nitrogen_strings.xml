@@ -243,11 +243,6 @@
     <string name="battery_light_full_color">Заряжена (90%)</string>
     <string name="battery_light_reallyfull_color">Заряжена (100%)</string>
 
-    <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Индикатор сетевого трафика</string>
-    <string name="network_traffic_state_summary">Показывать скорость передачи данных</string>
-    <string name="network_traffic_autohide_threshold_title">Порог неактивности (KB/s)</string>
-
     <!-- Smart pulldown-->
     <string name="smart_pulldown_title">\"Умная\" панель уведомлений</string>
     <string name="smart_pulldown_summary">Открыть быстрые настройки %1$s уведомлений</string>
@@ -601,3 +596,4 @@
     <string name="show_battery_percent_summary">Отображать процент заряда рядом с иконкой</string>
     <string name="battery_style_category_title">Иконка батареи</string>
 </resources>
+
