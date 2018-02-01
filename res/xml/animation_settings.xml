@@ -22,7 +22,7 @@
     <Preference
         android:key="aokp_animation"
         android:title="@string/system_animation_title"
-        android:fragment="com.benzo.settings.animation.AnimationControls" />
+        android:fragment="com.nitrogen.settings.fragments.animation.AnimationControls" />
 
     <ListPreference
         android:key="screen_off_animation"
