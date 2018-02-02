@@ -18,12 +18,6 @@
     android:title="@string/powermenu_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <com.nitrogen.settings.preferences.SecureSettingSwitchPreference
-            android:key="lockscreen_power_menu_disabled"
-            android:title="@string/lockscreen_power_menu_disabled_title"
-            android:summary="@string/lockscreen_power_menu_disabled_summary"
-            android:defaultValue="true" />
-
          <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
             android:key="powermenu_power"
             android:title="@string/powermenu_power"
@@ -78,4 +72,44 @@
             android:key="powermenu_soundpanel"
             android:title="@string/powermenu_soundpanel"
             android:defaultValue="false" />-->
+
+    <PreferenceCategory
+        android:key="powermenu_category_visibility"
+        android:title="@string/powermenu_category_visibility">
+
+        <com.nitrogen.settings.preferences.SecureSettingSwitchPreference
+            android:key="lockscreen_power_menu_disabled"
+            android:title="@string/lockscreen_power_menu_disabled_title"
+            android:summary="@string/lockscreen_power_menu_disabled_summary"
+            android:defaultValue="true" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_reboot"
+            android:title="@string/powermenu_restart"
+            android:summary="@string/powermenu_ls_reboot_summary"
+            android:dependency="powermenu_reboot"
+            android:defaultValue="true" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_advanced_reboot"
+            android:title="@string/powermenu_restart_recovery"
+            android:summary="@string/powermenu_ls_advanced_reboot_summary"
+            android:dependency="powermenu_advanced_reboot"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_screenshot"
+            android:title="@string/powermenu_screenshot"
+            android:summary="@string/powermenu_ls_screenshot_summary"
+            android:dependency="powermenu_screenshot"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_airplane"
+            android:title="@string/powermenu_airplane"
+            android:summary="@string/powermenu_ls_airplane_summary"
+            android:dependency="powermenu_airplane"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
