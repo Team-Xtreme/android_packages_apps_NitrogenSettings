@@ -38,7 +38,6 @@
     <Preference
             android:key="carrier_label"
             android:fragment="com.nitrogen.settings.fragments.CarrierLabel"
-            android:icon="@drawable/ic_carrierlabel"
             android:title="@string/carrierlabel_title" />
 
     <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
