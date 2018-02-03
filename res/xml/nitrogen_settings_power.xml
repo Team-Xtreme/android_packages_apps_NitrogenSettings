@@ -96,15 +96,33 @@
             android:defaultValue="false" />
 
         <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_airplane"
+            android:title="@string/powermenu_airplane"
+            android:summary="@string/powermenu_ls_airplane_summary"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
             android:key="powermenu_ls_screenshot"
             android:title="@string/powermenu_screenshot"
             android:summary="@string/powermenu_ls_screenshot_summary"
             android:defaultValue="false" />
 
         <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
-            android:key="powermenu_ls_airplane"
-            android:title="@string/powermenu_airplane"
-            android:summary="@string/powermenu_ls_airplane_summary"
+            android:key="powermenu_ls_screenrecord"
+            android:title="@string/powermenu_screenrecord"
+            android:summary="@string/powermenu_ls_screenrecord_summary"
+            android:defaultValue="true" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_torch"
+            android:title="@string/powermenu_torch"
+            android:summary="@string/powermenu_ls_torch_summary"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_users"
+            android:title="@string/powermenu_users"
+            android:summary="@string/powermenu_ls_users_summary"
             android:defaultValue="false" />
 
     </PreferenceCategory>
