@@ -278,8 +278,11 @@
     <string name="powermenu_lockscreen_title">Visibility on the lockscreen</string>
     <string name="powermenu_ls_reboot_summary">Show the reboot option on the lockscreen</string>
     <string name="powermenu_ls_advanced_reboot_summary">Show the advanced reboot option on the lockscreen</string>
-    <string name="powermenu_ls_screenshot_summary">Show the screenshot option on the lockscreen</string>
     <string name="powermenu_ls_airplane_summary">Show the airplane mode option on the lockscreen</string>
+    <string name="powermenu_ls_screenshot_summary">Show the screenshot option on the lockscreen</string>
+    <string name="powermenu_ls_screenrecord_summary">Show the screenrecord option on the lockscreen</string>
+    <string name="powermenu_ls_torch_summary">Show the torch option on the lockscreen</string>
+    <string name="powermenu_ls_users_summary">Show the users option on the lockscreen</string>
 
     <!-- fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
