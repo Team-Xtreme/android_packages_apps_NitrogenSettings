@@ -73,6 +73,20 @@
             android:title="@string/powermenu_soundpanel"
             android:defaultValue="false" />-->
 
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_onthego"
+            android:title="@string/powermenu_onthego"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.CustomSeekBarPreference
+            android:key="on_the_go_alpha"
+            android:title="@string/onthego_alpha_title"
+            android:summary="@string/onthego_alpha_summary"
+            android:defaultValue="50"
+            android:max="100"
+            settings:min="0"
+            settings:units="" />
+
     <PreferenceCategory
         android:key="powermenu_category_visibility"
         android:title="@string/powermenu_category_visibility">
@@ -123,6 +137,12 @@
             android:key="powermenu_ls_users"
             android:title="@string/powermenu_users"
             android:summary="@string/powermenu_ls_users_summary"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_onthego"
+            android:title="@string/powermenu_onthego"
+            android:summary="@string/powermenu_ls_onthego_summary"
             android:defaultValue="false" />
 
     </PreferenceCategory>
