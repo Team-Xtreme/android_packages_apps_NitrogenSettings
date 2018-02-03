@@ -752,4 +752,10 @@
     <!-- 4G Icon -->
     <string name="show_fourg_icon_title">4G icon</string>
     <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+
+    <!-- On-The-Go -->
+    <string name="powermenu_onthego">On-The-Go</string>
+    <string name="onthego_alpha_title">On-The-Go Alpha</string>
+    <string name="onthego_alpha_summary">Alpha value of the On-The-Go overlay.</string>
+    <string name="powermenu_ls_onthego_summary" >Show On-The-Go option on the lockscreen</string>
 </resources>
