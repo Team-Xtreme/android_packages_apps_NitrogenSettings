@@ -759,6 +759,9 @@
     <string name="onthego_alpha_summary">Alpha value of the On-The-Go overlay.</string>
     <string name="powermenu_ls_onthego_summary" >Show On-The-Go option on the lockscreen</string>
 
+    <string name="ambient_visualizer_title">Ambient Display Visualizer</string>
+    <string name="ambient_visualizer_summary">Show Music Visualizer on Ambient Display</string>
+
      <!-- LockScreen Visualizer -->
     <string name="lockscreen_visualizer_title">Lockscreen Visualizer</string>
     <string name="lockscreen_visualizer_summary">Show Music Visualizer on Lockscreen</string>
