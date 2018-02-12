@@ -18,12 +18,6 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
-        android:key="roaming_indicator_icon"
-        android:title="@string/roaming_indicator_icon_title"
-        android:summary="@string/roaming_indicator_icon_summary"
-        android:defaultValue="true"/>
-
     <com.nitrogen.settings.preferences.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_brightness_slider_title"
