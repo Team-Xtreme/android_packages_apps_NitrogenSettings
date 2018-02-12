@@ -43,6 +43,11 @@
             settings:allowDividerAbove="false" />
 
     <Preference
+        android:key="status_bar_logos"
+        android:fragment="com.nitrogen.settings.fragments.StatusbarLogo"
+        android:title="@string/status_bar_logos" />
+
+    <Preference
             android:key="carrier_label"
             android:fragment="com.nitrogen.settings.fragments.CarrierLabel"
             android:title="@string/carrierlabel_title" />

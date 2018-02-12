@@ -47,14 +47,14 @@
         android:key="lock_screen_weather_category"
         android:title="@string/lock_screen_weather_category_title" >
 
-        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
             android:key="lock_screen_show_weather"
             android:title="@string/lock_screen_show_weather_title"
             android:summaryOn="@string/lock_screen_show_weather_summaryOn"
             android:summaryOff="@string/lock_screen_show_weather_summaryOff"
             android:defaultValue="false" />
 
-        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
             android:key="lock_screen_show_weather_location"
             android:title="@string/lock_screen_show_location_title"
             android:summaryOn="@string/lock_screen_show_location_summaryOn"
@@ -62,7 +62,7 @@
             android:defaultValue="true"
             android:dependency="lock_screen_show_weather" />
 
-        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
             android:key="lock_screen_weather_condition_icon"
             android:title="@string/lock_screen_weather_condition_icon_title"
             android:summaryOn="@string/lock_screen_weather_condition_icon_summaryOn"
