@@ -26,6 +26,11 @@
     </Preference>
 
     <Preference
+        android:key="statusbar_logos"
+        android:fragment="com.nitrogen.settings.fragments.StatusbarLogo"
+        android:title="@string/statusbar_logos" />
+
+    <Preference
         android:key="status_bar_clock"
         android:fragment="com.nitrogen.settings.fragments.StatusBarClockSettings"
         android:title="@string/status_bar_clock_title" />
