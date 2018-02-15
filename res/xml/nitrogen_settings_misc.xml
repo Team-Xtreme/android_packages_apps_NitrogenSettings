@@ -33,6 +33,12 @@
             android:fragment="com.android.settings.applications.AppOpsSummary"/>
 
         <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="disable_fc_notifications"
+            android:title="@string/disable_fc_notifications_title"
+            android:summary="@string/disable_fc_notifications_summary"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
             android:key="mtp_dirty_hack"
             android:title="@string/enable_mtp_dirtyhack_title"
             android:summary="@string/enable_mtp_dirtyhack_summary"
