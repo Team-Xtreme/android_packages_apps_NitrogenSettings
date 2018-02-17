@@ -18,6 +18,11 @@
         android:title="@string/misc_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <Preference
+            android:key="weather"
+            android:fragment="com.nitrogen.settimgs.fragments.Weather"
+            android:title="@string/weather_title" />
+
         <Preference
              android:key="wakelock_blocker"
              android:fragment="com.nitrogen.settings.fragments.WakeLockBlocker"
