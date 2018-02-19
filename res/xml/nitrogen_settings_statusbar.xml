@@ -35,6 +35,13 @@
             android:title="@string/battery_style_category_title"
             android:fragment="com.nitrogen.settings.fragments.StatusBarBattery" />
 
+    <PreferenceScreen
+            android:key="battery_bar"
+            android:title="@string/battery_bar_title"
+            android:summary="@string/battery_bar_summary"
+            android:fragment="com.nitrogen.settings.fragments.BatteryBar"
+            settings:allowDividerAbove="false" />
+
     <Preference
             android:key="carrier_label"
             android:fragment="com.nitrogen.settings.fragments.CarrierLabel"
