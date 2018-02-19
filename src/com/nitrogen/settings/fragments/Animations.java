@@ -15,7 +15,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
 import com.nitrogen.settings.fragments.animations.AnimationControls;
-import com.nitrogen.settings.R;
+import com.android.settings.R;
 
 import java.util.ArrayList;
 import java.util.List;
