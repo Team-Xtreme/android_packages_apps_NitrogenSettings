@@ -19,7 +19,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.nitrogen.AwesomeAnimationHelper;
 
 import com.nitrogen.settings.preferences.CustomSeekBarPreference;
-import com.nitrogen.settings.R;
+import com.android.settings.R;
 
 import java.util.Arrays;
 
