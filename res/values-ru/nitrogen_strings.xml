@@ -85,15 +85,6 @@
     <string name="incall_vibrate_call_wait_title">Вибрация при ожидании</string>
     <string name="incall_vibrate_disconnect_title">Вибрировать при отбое</string>
 
-    <!-- Lockscreen weather -->
-    <string name="lock_screen_weather_settings_title">Погода на экране блокировки</string>
-    <string name="weather_show_weather_title">Показывать погоду</string>
-    <string name="weather_show_weather_summary">Включить отображение информации о погоде</string>
-    <string name="weather_show_location_title">Показывать местоположение</string>
-    <string name="weather_show_location_summary">Включить отображение местоположения</string>
-    <string name="weather_config_title">Настройки сервиса</string>
-    <string name="weather_icon_pack_title">Стиль иконок</string>
-
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Редактирование иконок</string>
 
@@ -604,3 +595,4 @@
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Непрозрачность</string>
 </resources>
+
