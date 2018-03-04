@@ -20,7 +20,7 @@
 
          <Preference
             android:key="weather"
-            android:fragment="com.nitrogen.settimgs.fragments.Weather"
+            android:fragment="com.nitrogen.settings.fragments.Weather"
             android:title="@string/weather_title" />
 
          <Preference
