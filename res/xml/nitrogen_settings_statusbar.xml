@@ -36,7 +36,7 @@
             android:fragment="com.nitrogen.settings.fragments.StatusBarBattery" />
 
     <PreferenceScreen
-            android:key="batterybar"
+            android:key="battery_bar_category"
             android:title="@string/battery_bar_title"
             android:summary="@string/battery_bar_summary"
             android:fragment="com.nitrogen.settings.fragments.BatteryBar"
