@@ -33,8 +33,7 @@
             android:key="rr_blur"
             android:fragment="com.nitrogen.settings.fragments.BlurPersonalizations"
             android:title="@string/settings_blur_cat"
-            android:summary="@string/settings_blur_sum"
-            android:icon="@drawable/rr_blur_icon"/>
+            android:summary="@string/settings_blur_sum"/>
 
         <Preference
              android:key="wakelock_blocker"

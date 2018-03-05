@@ -996,4 +996,5 @@
     <string name="blurred_radius_summary">Amount of blur</string>
     <string name="blur_cat_notice">Notice</string>
     <string name="blur_cat_notice_summary">Blur personalizations are disabled during Keyguard view! Only Translucent Notifications are enabled!</string>
+    <string name="reset_message">Reset all entries to default?</string>
 </resources>
