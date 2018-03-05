@@ -42,10 +42,10 @@
             android:fragment="com.nitrogen.settings.fragments.BatteryBar"
             settings:allowDividerAbove="false" />
 
-    <Preference
-        android:key="status_bar_logos"
-        android:fragment="com.nitrogen.settings.fragments.StatusbarLogo"
-        android:title="@string/status_bar_logos" />
+    <PreferenceScreen
+            android:key="status_bar_crdroid_logo"
+            android:fragment="com.nitrogen.settings.fragments.StatusbarLogo"
+            android:title="@string/status_bar_logos" />
 
     <Preference
             android:key="carrier_label"
