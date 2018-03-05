@@ -43,6 +43,8 @@ public class StatusbarLogo extends SettingsPreferenceFragment implements OnPrefe
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
+        ContentResolver resolver = getActivity().getContentResolver();
+
         mCrDroidLogo = (SwitchPreference) findPreference(CRDROID_LOGO);
         mCrDroidLogo.setOnPreferenceChangeListener(this);
 
