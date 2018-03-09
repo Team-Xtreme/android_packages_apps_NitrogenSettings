@@ -828,37 +828,7 @@
     <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
     <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
 
-     <!-- QS Headers
-    <string name="qs_header_title">QS Headers</string>
-=======
-    <!-- QS Headers -->
->>>>>>> 414316c... QS header images
-    <string name="status_bar_custom_header_title">Enable</string>
-    <string name="daylight_header_pack_title">Header image collection</string>
-    <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
-    <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
-    <string name="unit_percent">\u0025</string>
-    <string name="static_header_provider" translatable="false">static</string>
-    <string name="daylight_header_provider" translatable="false">daylight</string>
-<<<<<<< HEAD
-    <string name="static_header_provider_title">Static Image</string>
-    <string name="daylight_header_provider_title">Image Collection</string>
-    <string name="custom_header_provider_title">Header provider</string>
-    <string name="custom_header_browse_title">Browse installed headers</string>
-    <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
-    <string name="custom_header_browse_summary_new">Browse all available header Collection</string>
-=======
-    <string name="static_header_provider_title">Static image</string>
-    <string name="daylight_header_provider_title">Image collection</string>
-    <string name="custom_header_provider_title">Header provider</string>
-    <string name="custom_header_browse_title">Browse installed headers</string>
-    <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
-    <string name="custom_header_browse_summary_new">Browse all available header collections</string>
->>>>>>> 414316c... QS header images
-    <string name="custom_header_pick_title">Select header image</string>
-    <string name="custom_header_pick_summary">Select an image to use for static mode</string>
-    <string name="style_enabled_summary">Custom header image is ON</string>
-    <string name="style_disabled_summary">Custom header image
+
     <!-- StatusBar weather settings -->
     <string name="statusbar_weather_title">Status bar weather</string>
     <string name="statusbar_weather_summary">Configure from QS settings/Weather</string>
@@ -901,6 +871,28 @@
     <string name="screen_state_on_delay_title">Screen On actions delay</string>
     <string name="screen_state_on_delay_summary">Number of minutes to wait before performing actions after screen on</string>
 
+    <!-- QS Headers -->
+    <string name="status_bar_custom_header_title">Enable</string>
+    <string name="daylight_header_pack_title">Header image collection</string>
+    <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
+    <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider" translatable="false">static</string>
+    <string name="daylight_header_provider" translatable="false">daylight</string>
+    <string name="static_header_provider_title">Static image</string>
+    <string name="daylight_header_provider_title">Image collection</string>
+    <string name="custom_header_provider_title">Header provider</string>
+    <string name="custom_header_browse_title">Browse installed headers</string>
+    <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
+    <string name="custom_header_browse_summary_new">Browse all available header collections</string>
+    <string name="custom_header_pick_title">Select header image</string>
+    <string name="custom_header_pick_summary">Select an image to use for static mode</string>
+    <string name="style_enabled_summary">Custom header image is ON</string>
+    <string name="style_disabled_summary">Custom header image is OFF</string>
+    <string name="header_provider_disabled">Disabled</string>
+    <string name="custom_header_title">Custom header image</string>
+    <string name="file_header_select_title">Select image</string>
+    <string name="file_header_select_summary">Select custom image</string>
+    <string name="file_header_provider_title">Custom image</string>
     <string name="file_header_provider" translatable="false">file</string>
-    <string name="qs_tile_title_visibility_title">Show tiles title</string>
 </resources>
