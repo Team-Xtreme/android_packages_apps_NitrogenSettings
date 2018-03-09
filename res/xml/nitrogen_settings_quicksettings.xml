@@ -81,11 +81,6 @@
         android:persistent="false" />
 
     <Preference
-        android:key="qs_header"
-        android:fragment="com.nitrogen.settings.fragments.QSHeader"
-        android:title="@string/qs_header_title"/>
-
-    <Preference
         android:key="qs_rows_columns"
         android:fragment="com.nitrogen.settings.QsRowsColumns"
         android:title="@string/qs_rows_columns_title"/>

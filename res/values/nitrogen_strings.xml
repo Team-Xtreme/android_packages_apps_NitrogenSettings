@@ -827,7 +827,7 @@
     <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
     <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
 
-     <!-- QS Headers --> 
+     <!-- QS Headers
     <string name="qs_header_title">QS Headers</string>
     <string name="status_bar_custom_header_title">Enable</string>
     <string name="daylight_header_pack_title">Header image collection</string>
@@ -851,7 +851,7 @@
     <string name="file_header_select_title">Select image</string>
     <string name="file_header_select_summary">Select custom image</string>
     <string name="file_header_provider_title">Custom image</string>
-    <string name="file_header_provider" translatable="false">file</string>
+    <string name="file_header_provider" translatable="false">file</string-->
 
     <!-- StatusBar weather settings -->
     <string name="statusbar_weather_title">Status bar weather</string>
