@@ -889,4 +889,9 @@
     <string name="ambient_play_illustration_text">Song by Artist</string>
     <string name="ambient_play_description">When music is playing nearby, you can see the song name and artist. Ambient Play requires a network connection and only sends temporary recorded data to the recognition database.</string>
 
+    <string name="data_activity_arrows_title">Data activity</string>
+    <string name="data_activity_arrows_summary">Display data activity arrows</string>
+    <string name="wifi_activity_arrows_title">Wifi activity</string>
+    <string name="wifi_activity_arrows_summary">Display wifi activity arrows</string>
+
 </resources>
