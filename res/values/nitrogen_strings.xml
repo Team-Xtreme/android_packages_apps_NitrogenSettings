@@ -27,6 +27,8 @@
     <string name="volume_title">Volume rockers</string>
     <string name="notifications_title">Notifications</string>
     <string name="device_part_title">Device features</string>
+    <string name="rr_power_panel_title">Power menu</string>
+    <string name="rr_power_summary">Customize the dim and transparency of the power menu interface</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -939,4 +941,10 @@
     <string name="volume_dialog_corner_radius_title">Volume dialog corner radius</string>
     <string name="volume_dialog_dash_width_title">Volume dialog stroke dash width</string>
     <string name="volume_dialog_dash_gap_title">Volume dialog stroke dash gap</string>
+
+    <!-- Power menu and dialogs opacity -->
+    <string name="power">Power Menu Tweaks</string>
+    <string name="power_menu_transparency">Power/reboot menu opacity</string>
+    <string name="power_menu_dialog_dim">Power/reboot dialog dim background amount</string>
+
 </resources>

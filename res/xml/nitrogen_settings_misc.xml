@@ -29,6 +29,12 @@
             android:summary="@string/screen_state_toggles_summary_opt"
             android:fragment="com.nitrogen.settings.fragments.SuspendActions" />
 
+        <PreferenceScreen
+            android:key="rr_power"
+            android:fragment="com.nitrogen.settings.fragments.PowerPanelSettings" + 
+            android:title="@string/rr_power_panel_title"
+            android:summary="@string/rr_power_summary" />
+
         <Preference
              android:key="wakelock_blocker"
              android:fragment="com.nitrogen.settings.fragments.WakeLockBlocker"
