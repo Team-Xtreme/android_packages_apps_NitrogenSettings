@@ -925,4 +925,18 @@
     <string name="ambient_weather_lockscreen_title">Ambient weather</string>
     <string name="ambient_weather_lockscreen_summary">Show weather on the lockscreen and when dozing</string>
 
+    <!-- Volume dialog timeout -->
+    <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
+    <!-- Volume dialog opacity -->
+    <string name="volume_dialog_transparency_title">Volume Dialog Tweaks</string>
+    <string name="volume_dialog_transparency">Volume dialog opacity</string>
+    <string name="volume_dialog_stroke_title">Volume dialog stroke</string>
+    <string name="volume_dialog_stroke_disabled">Disabled</string>
+    <string name="volume_dialog_stroke_accent">Accent color</string>
+    <string name="volume_dialog_stroke_custom">Custom color</string>
+    <string name="volume_dialog_stroke_color_title">Volume dialog stroke color</string>
+    <string name="volume_dialog_stroke_thickness_title">Volume dialog stroke thickness</string>
+    <string name="volume_dialog_corner_radius_title">Volume dialog corner radius</string>
+    <string name="volume_dialog_dash_width_title">Volume dialog stroke dash width</string>
+    <string name="volume_dialog_dash_gap_title">Volume dialog stroke dash gap</string>
 </resources>
