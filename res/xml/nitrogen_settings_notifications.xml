@@ -74,10 +74,21 @@
             android:defaultValue="false" />
     </PreferenceCategory>
 
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/force_expanded_notifications_title"
+        android:summary="@string/force_expanded_notifications_summary" />
+
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="disable_immersive_message"
+        android:title="@string/disable_immersive_message_title"
+        android:summary="@string/disable_immersive_message_summary" />
+
     <!--Preference
             android:title="@string/power_notification_title" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.PowerActivity" />
     </Preference-->
+
 </PreferenceScreen>
