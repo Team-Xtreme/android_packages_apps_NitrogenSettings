@@ -17,5 +17,12 @@
             android:entries="@array/ringtone_focus_mode_entries"
             android:entryValues="@array/ringtone_focus_mode_values" />
 
+        <com.nitrogen.settings.references.SystemSettingSwitchPreference
+            android:key="music_tile_title"
+            android:title="@string/qs_music_tile_track_optional_title"
+            android:summary="@string/qs_music_tile_track_optional_summary"
+            android:dependency="qs_tile_title_visibility"
+            android:defaultValue="false"/>
+
 </PreferenceScreen>
 
