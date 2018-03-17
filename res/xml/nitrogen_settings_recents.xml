@@ -48,6 +48,18 @@
         android:entryValues="@array/immersive_recents_values"
         android:persistent="false" />
 
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="recents_full_screen_clock"
+        android:title="@string/recents_full_screen_clock_title"
+        android:summary="@string/recents_full_screen_clock_summary"
+        android:defaultValue="false" />
+
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="recents_full_screen_date"
+        android:title="@string/recents_full_screen_date_title"
+        android:summary="@string/recents_full_screen_date_summary"
+        android:defaultValue="false" />
+
      <Preference
         android:key="hide_app_from_recents"
         android:title="@string/hide_apps_from_recents_title"

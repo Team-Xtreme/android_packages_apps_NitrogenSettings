@@ -53,7 +53,7 @@ import com.android.settings.SettingsPreferenceFragment;
 public class RecentsSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener, DialogInterface.OnDismissListener {
 
-    private final static String[] sSupportedActions = new String[] {
+    private final String[] sSupportedActions = new String[] {
         "org.adw.launcher.THEMES",
         "com.gau.go.launcherex.theme"
     };
@@ -68,12 +68,16 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     private ListView mListView;
 
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+    private static final String RECENTS_DATE = "recents_full_screen_date";
+    private static final String RECENTS_CLOCK = "recents_full_screen_clock";
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private ListPreference mImmersiveRecents;
     private SwitchPreference mSlimToggle;
     private Preference mStockIconPacks;
+    private SwitchPreference mClock;
+    private SwitchPreference mDate;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -92,10 +96,15 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
 
         mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
-        mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
-                resolver, Settings.System.IMMERSIVE_RECENTS, 0)));
+        int mode = Settings.System.getInt(getContentResolver(),
+                Settings.System.IMMERSIVE_RECENTS, 0);
+        mImmersiveRecents.setValue(String.valueOf(mode));
         mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
         mImmersiveRecents.setOnPreferenceChangeListener(this);
+
+        mClock = (SwitchPreference) findPreference(RECENTS_CLOCK);
+        mDate = (SwitchPreference) findPreference(RECENTS_DATE);
+        updateDisablestate(mode);
 
 	mStockIconPacks = (Preference) findPreference("recents_icon_pack");
         mSlimToggle = (SwitchPreference) findPreference("use_slim_recents");
@@ -118,10 +127,12 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
             mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
         return true;
         } else if (preference == mImmersiveRecents) {
+            int mode = Integer.valueOf((String) newValue);
             Settings.System.putInt(getContentResolver(), Settings.System.IMMERSIVE_RECENTS,
                     Integer.valueOf((String) objValue));
             mImmersiveRecents.setValue(String.valueOf(objValue));
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+            updateDisablestate(mode);
             return true;
         } else if (preference == mSlimToggle) {
             boolean value = (Boolean) objValue;
@@ -134,6 +145,16 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
 	}
     return false;
 
+    }
+
+    public void updateDisablestate(int mode) {
+        if (mode == 0 || mode == 2) {
+           mClock.setEnabled(false);
+           mDate.setEnabled(false);
+        } else {
+           mClock.setEnabled(true);
+           mDate.setEnabled(true);
+        }
     }
 
     @Override
