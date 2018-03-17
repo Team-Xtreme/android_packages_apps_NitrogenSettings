@@ -81,4 +81,11 @@
             android:persistent="false" />
 
     </PreferenceCategory>
+
+        <PreferenceScreen
+            android:key="recent_styles"
+            android:title="@string/recent_styles"
+            android:fragment="com.nitrogen.settings.fragments.RecentsStyles"
+            android:summary="@string/recent_styles_summary"/>
+
 </PreferenceScreen>
