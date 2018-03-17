@@ -72,4 +72,11 @@
             android:title="@string/show_cpu_info"
             android:summary="@string/show_cpu_info_summary" 
             android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingListPreference
+            android:entries="@array/screenshot_type_entries"
+            android:entryValues="@array/screenshot_type_values"
+            android:key="screenshot_type"
+            android:title="@string/screenshot_type_title" />
+
 </PreferenceScreen>

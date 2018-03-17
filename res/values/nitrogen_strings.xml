@@ -1168,4 +1168,8 @@
     <string name="qs_music_tile_track_optional_title">Music tile track title</string>
     <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
 
+    <string name="screenshot_type_title">Screenshot type</string>
+    <string name="screenshot_type_fullscreen">Take fullscreen screenshots</string>
+    <string name="screenshot_type_partial">Drag selection on the area you want to take as a screenshot</string>
+
 </resources>
