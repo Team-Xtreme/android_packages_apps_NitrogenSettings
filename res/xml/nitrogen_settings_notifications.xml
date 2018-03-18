@@ -18,6 +18,12 @@
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Ticker -->
+    <Preference
+       android:key="ticker_mode"
+       android:title="@string/ticker_enabled"
+       android:fragment="com.nitrogen.settings.fragments.Ticker" />
+
     <!-- Heads up -->
     <Preference
         android:key="heads_up_notifications"
@@ -68,10 +74,27 @@
             android:defaultValue="false" />
     </PreferenceCategory>
 
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/force_expanded_notifications_title"
+        android:summary="@string/force_expanded_notifications_summary" />
+
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="disable_immersive_message"
+        android:title="@string/disable_immersive_message_title"
+        android:summary="@string/disable_immersive_message_summary" />
+
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="notification_guts_kill_app_button"
+        android:title="@string/notification_guts_kill_app_button_title"
+        android:summary="@string/notification_guts_kill_app_button_summary"
+        android:defaultValue="false" />
+
     <!--Preference
             android:title="@string/power_notification_title" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.PowerActivity" />
     </Preference-->
+
 </PreferenceScreen>

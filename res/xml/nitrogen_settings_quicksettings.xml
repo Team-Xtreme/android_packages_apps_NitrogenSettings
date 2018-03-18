@@ -18,6 +18,12 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!--com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="roaming_indicator_icon"
+        android:title="@string/roaming_indicator_icon_title"
+        android:summary="@string/roaming_indicator_icon_summary"
+        android:defaultValue="true"/-->
+
     <com.nitrogen.settings.preferences.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_brightness_slider_title"
@@ -61,12 +67,23 @@
         android:summary="@string/qs_tile_title_visibility_summary"
         android:defaultValue="true" />
 
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_quickbar_scroll_enabled"
+        android:title="@string/qqs_scroll_title"
+        android:summary="@string/qqs_scroll_summary"
+        android:defaultValue="false"/>
+
     <ListPreference
         android:key="smart_pulldown"
         android:title="@string/smart_pulldown_title"
         android:entries="@array/smart_pulldown_entries"
         android:entryValues="@array/smart_pulldown_values"
         android:persistent="false" />
+
+    <Preference
+        android:key="qs_header"
+        android:fragment="com.nitrogen.settings.fragments.QSHeader"
+        android:title="@string/qs_header_title"/>
 
     <Preference
         android:key="qs_rows_columns"

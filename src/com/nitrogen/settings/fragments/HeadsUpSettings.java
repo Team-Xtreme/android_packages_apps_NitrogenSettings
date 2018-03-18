@@ -18,6 +18,7 @@ package com.nitrogen.settings.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -40,6 +41,7 @@ import android.widget.ListView;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.nitrogen.settings.preferences.GlobalSettingSwitchPreference;
 import com.nitrogen.settings.preferences.PackageListAdapter;
 import com.nitrogen.settings.preferences.PackageListAdapter.PackageItem;
 import android.provider.Settings;
@@ -56,6 +58,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     private static final int DIALOG_BLACKLIST_APPS = 1;
     private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out";
     private static final String PREF_HEADS_UP_SNOOZE_TIME = "heads_up_snooze_time";
+    private static final String KEY_HEADS_UP_NOTIFICATIONS_ENABLED = "heads_up_notifications_enabled";
 
     private PackageListAdapter mPackageAdapter;
     private PackageManager mPackageManager;
@@ -70,6 +73,8 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     private String mBlacklistPackageList;
     private Map<String, Package> mStoplistPackages;
     private Map<String, Package> mBlacklistPackages;
+
+    private GlobalSettingSwitchPreference mHeadsUpNotificationsEnabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -118,6 +123,9 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
                 Settings.System.HEADS_UP_NOTIFICATION_SNOOZE, defaultSnooze);
         mHeadsUpSnoozeTime.setValue(String.valueOf(headsUpSnooze));
         updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
+
+        mHeadsUpNotificationsEnabled = (GlobalSettingSwitchPreference) findPreference(KEY_HEADS_UP_NOTIFICATIONS_ENABLED);
+        updatePrefs();
     }
 
     @Override
@@ -312,6 +320,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
         builder.show();
         }
+        updatePrefs();
         return true;
     }
 
@@ -407,5 +416,19 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         }
         Settings.System.putString(getContentResolver(),
                 setting, value);
+    }
+
+    private void updatePrefs() {
+          ContentResolver resolver = getActivity().getContentResolver();
+          boolean enabled = (Settings.System.getInt(resolver,
+                  Settings.System.STATUS_BAR_SHOW_TICKER, 0) == 1) ||
+                  (Settings.System.getInt(resolver,
+                  Settings.System.STATUS_BAR_SHOW_TICKER, 0) == 2);
+        if (enabled) {
+            Settings.Global.putInt(resolver,
+                Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, 0);
+            mBlacklistPrefList.setEnabled(false);
+            mHeadsUpNotificationsEnabled.setEnabled(false);
+        }
     }
 }

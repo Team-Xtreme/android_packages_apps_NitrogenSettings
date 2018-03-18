@@ -18,12 +18,6 @@
     android:title="@string/powermenu_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <com.nitrogen.settings.preferences.SecureSettingSwitchPreference
-            android:key="lockscreen_power_menu_disabled"
-            android:title="@string/lockscreen_power_menu_disabled_title"
-            android:summary="@string/lockscreen_power_menu_disabled_summary"
-            android:defaultValue="true" />
-
          <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
             android:key="powermenu_power"
             android:title="@string/powermenu_power"
@@ -78,4 +72,78 @@
             android:key="powermenu_soundpanel"
             android:title="@string/powermenu_soundpanel"
             android:defaultValue="false" />-->
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_onthego"
+            android:title="@string/powermenu_onthego"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.CustomSeekBarPreference
+            android:key="on_the_go_alpha"
+            android:title="@string/onthego_alpha_title"
+            android:summary="@string/onthego_alpha_summary"
+            android:defaultValue="50"
+            android:max="100"
+            settings:min="0"
+            settings:units="" />
+
+    <PreferenceCategory
+        android:key="powermenu_category_visibility"
+        android:title="@string/powermenu_category_visibility">
+
+        <com.nitrogen.settings.preferences.SecureSettingSwitchPreference
+            android:key="lockscreen_power_menu_disabled"
+            android:title="@string/lockscreen_power_menu_disabled_title"
+            android:summary="@string/lockscreen_power_menu_disabled_summary"
+            android:defaultValue="true" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_reboot"
+            android:title="@string/powermenu_restart"
+            android:summary="@string/powermenu_ls_reboot_summary"
+            android:defaultValue="true" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_advanced_reboot"
+            android:title="@string/powermenu_restart_recovery"
+            android:summary="@string/powermenu_ls_advanced_reboot_summary"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_airplane"
+            android:title="@string/powermenu_airplane"
+            android:summary="@string/powermenu_ls_airplane_summary"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_screenshot"
+            android:title="@string/powermenu_screenshot"
+            android:summary="@string/powermenu_ls_screenshot_summary"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_screenrecord"
+            android:title="@string/powermenu_screenrecord"
+            android:summary="@string/powermenu_ls_screenrecord_summary"
+            android:defaultValue="true" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_torch"
+            android:title="@string/powermenu_torch"
+            android:summary="@string/powermenu_ls_torch_summary"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_users"
+            android:title="@string/powermenu_users"
+            android:summary="@string/powermenu_ls_users_summary"
+            android:defaultValue="false" />
+
+        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_ls_onthego"
+            android:title="@string/powermenu_onthego"
+            android:summary="@string/powermenu_ls_onthego_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 </PreferenceScreen>

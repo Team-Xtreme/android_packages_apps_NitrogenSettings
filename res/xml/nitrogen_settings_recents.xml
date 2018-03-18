@@ -20,6 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="systemui_recents_mem_display"
+        android:title="@string/recents_show_membar_title"
+        android:summary="@string/recents_show_membar_summary"
+        android:defaultValue="false" />
+
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
         android:key="show_clear_all_recents"
         android:title="@string/show_clear_all_recents_button_title"
         android:summary="@string/show_clear_all_recents_button_summary"
@@ -42,6 +48,18 @@
         android:entryValues="@array/immersive_recents_values"
         android:persistent="false" />
 
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="recents_full_screen_clock"
+        android:title="@string/recents_full_screen_clock_title"
+        android:summary="@string/recents_full_screen_clock_summary"
+        android:defaultValue="false" />
+
+    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        android:key="recents_full_screen_date"
+        android:title="@string/recents_full_screen_date_title"
+        android:summary="@string/recents_full_screen_date_summary"
+        android:defaultValue="false" />
+
      <Preference
         android:key="hide_app_from_recents"
         android:title="@string/hide_apps_from_recents_title"
@@ -50,5 +68,36 @@
                  android:targetPackage="com.android.settings"
                  android:targetClass="com.nitrogen.settings.fragments.HAFRAppListActivity" />
      </Preference>
+
+     <Preference
+         android:key="recents_icon_pack"
+         android:title="@string/recents_icon_pack_title"
+         android:summary="@string/recents_icon_pack_summary" />
+
+    <PreferenceCategory
+        android:key="slim_recents"
+        android:title="@string/slim_recents_title">
+
+        <SwitchPreference
+            android:key="use_slim_recents"
+            android:title="@string/use_slim_recents_title"
+            android:summary="@string/use_slim_recents_summary"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="slim_recents_panel"
+            android:fragment="com.nitrogen.settings.fragments.SlimRecentsPanel"
+            android:title="@string/slim_recents_settings_title"
+            android:summary="@string/slim_recents_settings_summary"
+            android:dependency="use_slim_recents"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+        <PreferenceScreen
+            android:key="recent_styles"
+            android:title="@string/recent_styles"
+            android:fragment="com.nitrogen.settings.fragments.RecentsStyles"
+            android:summary="@string/recent_styles_summary"/>
 
 </PreferenceScreen>
