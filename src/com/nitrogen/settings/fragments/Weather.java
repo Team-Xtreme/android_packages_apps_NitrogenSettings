@@ -26,6 +26,7 @@ import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -70,7 +71,7 @@ public class Weather extends SettingsPreferenceFragment
         final PackageManager pm = getActivity().getPackageManager();
 
         mWeatherCategory = (PreferenceCategory) prefSet.findPreference(CATEGORY_WEATHER);
-        if (mWeatherCategory != null && (!Util.isPackageInstalled(WEATHER_SERVICE_PACKAGE, pm))) {
+        if (mWeatherCategory != null && (!Utils.isPackageInstalled(WEATHER_SERVICE_PACKAGE, pm))) {
             prefSet.removePreference(mWeatherCategory);
         } else {
             String settingsJaws = Settings.System.getString(resolver,

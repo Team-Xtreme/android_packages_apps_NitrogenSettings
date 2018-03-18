@@ -71,6 +71,7 @@ public class NotificationSettings extends SettingsPreferenceFragment
             int DisableIM = Settings.System.getInt(getContentResolver(),
                     DISABLE_IMMERSIVE_MESSAGE, 0);
             mDisableIM.setChecked(DisableIM != 0);
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

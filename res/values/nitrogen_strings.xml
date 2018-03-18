@@ -33,6 +33,7 @@
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
+    <string name="reset_message">Reset all entries to default?</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
 
@@ -944,6 +945,7 @@
     <string name="volume_dialog_corner_radius_title">Volume dialog corner radius</string>
     <string name="volume_dialog_dash_width_title">Volume dialog stroke dash width</string>
     <string name="volume_dialog_dash_gap_title">Volume dialog stroke dash gap</string>
+    <string name="rr_volume_title">Volume panel</string>
 
     <!-- Power menu and dialogs opacity -->
     <string name="power">Power Menu Tweaks</string>
@@ -1002,10 +1004,6 @@
     <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
     <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
-    <string name="picker_activities">Activities</string>
-    <string name="select_custom_app_title">Select custom app</string>
-    <string name="select_custom_activity_title">Select custom activity</string>
-    <string name="profile_applist_title">Applications</string>
 
     <string name="gesture_anywhere_0">0px</string>
     <string name="gesture_anywhere_1">1px</string>

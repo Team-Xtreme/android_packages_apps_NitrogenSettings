@@ -16,6 +16,9 @@ import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
 
+import android.app.ActivityManagerNative;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.support.v7.preference.PreferenceCategory;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -47,7 +50,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
-
+import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class RecentsSettings extends SettingsPreferenceFragment implements
