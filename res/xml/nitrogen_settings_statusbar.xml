@@ -94,14 +94,4 @@
             android:summary="@string/data_disabled_icon_summary"
             android:defaultValue="true"/>
 
-        <SwitchPreference
-            android:key="data_activity_arrows"
-            android:title="@string/data_activity_arrows_title"
-            android:summary="@string/data_activity_arrows_summary" />
-
-        <SwitchPreference
-            android:key="wifi_activity_arrows"
-            android:title="@string/wifi_activity_arrows_title"
-            android:summary="@string/wifi_activity_arrows_summary" />
-
 </PreferenceScreen>
